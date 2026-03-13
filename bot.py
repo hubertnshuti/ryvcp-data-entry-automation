@@ -185,8 +185,17 @@ def process_person(driver, row):
     if len(id_digits) != 16:
         return "Failed", f"Invalid ID length ({len(id_digits)} digits)"
 
+    # CHANGED: Auto-generate email based on name with random 2-digit number
     if email.lower() in ['nan', 'none', '', 'null']:
-        email = f"vol_{phone_clean}@gmail.com" if phone_clean else f"vol_{random.randint(1000,9999)}@gmail.com"
+        # Extract only letters from the name and make it lowercase
+        name_only_letters = "".join([c for c in full_name if c.isalpha()]).lower()
+        if not name_only_letters:
+            name_only_letters = "volunteer" # Fallback if name is totally blank/symbols
+        
+        # Generate a random 2-digit number (01 to 99)
+        random_num = str(random.randint(1, 99)).zfill(2)
+        
+        email = f"{name_only_letters}{random_num}@gmail.com"
         
     edu_raw = row.get('education', row.get('Education', ''))
     chosen_edu = determine_education(edu_raw)
