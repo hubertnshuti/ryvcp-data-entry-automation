@@ -27,7 +27,7 @@ print("   🤖 RYVCP VOLUNTEER BOT - TANK EDITION V6 (FINAL)")
 print("======================================================")
 
 INPUT_EMAIL = "kabagambegodfrey2020@gmail.com"
-INPUT_PASSWORD = "!Volunteer123"
+INPUT_PASSWORD = ""
 TARGET_SECTOR = "Nyagatare"
 TARGET_CELL = "Nyagatare"
 TARGET_VILLAGE = "Nyagatare I" 
