@@ -102,7 +102,7 @@ Excel File (citizens_data.xlsx)
 
 ---
 
-# 📌 Project Purpose
+# Project Purpose
 
 This project demonstrates how automation can be used to **support real community initiatives** by eliminating repetitive administrative work.
 
