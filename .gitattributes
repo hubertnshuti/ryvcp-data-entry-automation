@@ -1,2 +1,2 @@
 *.html linguist-detectable=false
-*.spec linguist-vendored
+*.spec linguist-generated=true
