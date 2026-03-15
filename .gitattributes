@@ -1,3 +1,2 @@
 *.html linguist-detectable=false
-*.spec linguist-detectable=false
-*.spec linguist-language=Python
+*.spec linguist-generated=true
