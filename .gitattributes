@@ -1,2 +1,2 @@
-*.html linguist-detectable=false
-*.spec linguist-generated=true
+* linguist-detectable=false
+*.py linguist-detectable=true
